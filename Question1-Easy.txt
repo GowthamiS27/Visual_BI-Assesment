@@ -1,0 +1,40 @@
+#EASY QUESTION:
+
+Write a Program to efficiently generate and compute the age of people. You can write in any comfortable language you prefer.
+
+
+
+
+lis=list(map(int,input().split()))
+tenc,twec,thirc,forc,fifc,sixc,sevc,eigc,ninc,hunc=0,0,0,0,0,0,0,0,0,0
+for i in range(len(lis)):
+    if lis[i]<=10:
+        tenc+=1
+    if lis[i]>=11 and lis[i]<=20:
+        twec+=1
+    if lis[i]>=21 and lis[i]<=30:
+        thirc+=1
+    if lis[i]>=31 and lis[i]<=40:
+        forc+=1
+    if lis[i]>=41 and lis[i]<=50:
+        fifc+=1
+    if lis[i]>=51 and lis[i]<=60:
+        sixc+=1 
+    if lis[i]>=61 and lis[i]<=70:
+        sevc+=1
+    if lis[i]>=71 and lis[i]<=80:
+        eigc+=1
+    if lis[i]>=81 and lis[i]<=90:
+        ninc+=1 
+    if lis[i]>=91 and lis[i]<=100:
+        hunc+=1
+print("1-10", tenc)
+print("11-20", twec)
+print("21-30", thirc)
+print("31-40", forc)
+print("41-50", fifc)
+print("51-60", sixc)
+print("61-70", sevc)
+print("71-80", eigc)
+print("81-90", ninc)
+print("91-100", hunc)

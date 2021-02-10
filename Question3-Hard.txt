@@ -1,0 +1,12 @@
+Given the number a, 0 < a < 9999999. Find the number consecutive occurrence of each digits
+and total occurrence of each digits and make the respective sentence
+
+
+
+s=input().strip()
+ss=list(set(s))
+d={'1':"one",'2':"two",3:"three",'4':"four",'5':"five",'6':"six",'7':"seven",'8':"eight",'9':"nine",
+  '10':"Ten"}
+for i in ss:
+    t=s.count(i)
+    print(d[t],i,"'s")
